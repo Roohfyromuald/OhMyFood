@@ -1,0 +1,40 @@
+@import "libs/reset.scss";
+
+body{
+background: #000;
+font-family:sans-serif;
+}
+p{
+    margin:1rem;
+  }
+.table {
+    width: 100%;
+    td {
+        border: 1px solid #ccc;
+    }
+    
+    thead {
+        background: #000;
+        color: #fff;
+    }
+}
+.btn {
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 3px;
+    background: rgb(99, 122, 255);
+    color: #fff;
+
+    &:hover {
+        background: rgb(62, 81, 189);
+    }
+}
+.btn-danger {
+    @extend .btn;
+
+    background: red;
+    &:hover {
+        background: #ff0000;
+}
+}
